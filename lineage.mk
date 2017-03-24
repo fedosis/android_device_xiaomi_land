@@ -35,7 +35,7 @@ PRODUCT_NAME := lineage_land
 
 
 #LETS BUILD WITH ROOT
-WITH_SU := true
+#WITH_SU := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

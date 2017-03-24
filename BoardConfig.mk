@@ -18,7 +18,7 @@ DEVICE_PATH := device/xiaomi/land
 CM_PATH := vendor/cm/config/board
 
 # DEODEX BUILD
-DISABLE_DEXPREOPT=true
+#DISABLE_DEXPREOPT=true
 
 # Define platform before including any common things
 include $(DEVICE_PATH)/PlatformConfig.mk
