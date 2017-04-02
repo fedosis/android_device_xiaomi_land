@@ -217,6 +217,9 @@
 
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
+    
+    <!-- Boolean indicating autojoin will prefer 5GHz and choose 5GHz BSSIDs -->
+    <bool name="config_wifi_enable_5GHz_preference">false</bool>
 
     <!-- Boolean indicating whether the wifi chipset supports background scanning mechanism.
          This mechanism allows the host to remain in suspend state and the dongle to actively
