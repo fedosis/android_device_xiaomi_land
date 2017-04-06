@@ -143,6 +143,12 @@ on enable-low-power
     write /sys/block/dm-0/queue/read_ahead_kb 256
     write /sys/block/dm-1/queue/read_ahead_kb 256
 
+    #GPU scheduler
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor "simple_ondemand"
+
+    #Disable KSM by default
+    write /sys/kernel/mm/ksm/run 0
+
     rm /data/system/perfd/default_values
     start perfd
 
