@@ -15,7 +15,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/land
-CM_PATH := vendor/cm/config/board
+CM_PATH := device/xiaomi/land/board
 
 # DEODEX BUILD
 #DISABLE_DEXPREOPT=true
