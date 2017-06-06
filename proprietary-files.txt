@@ -1278,6 +1278,7 @@ etc/firmware/a530v3_seq.fw2
 # Keylayout
 usr/keylayout/ft5x06_ts.kl
 usr/keylayout/gpio-keys.kl
+usr/keylayout/Generic.kl
 usr/keylayout/qpnp_pon.kl
 usr/keylayout/synaptics_dsx.kl
 usr/keylayout/synaptics_rmi4_i2c.kl
