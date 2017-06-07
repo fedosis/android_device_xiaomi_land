@@ -54,8 +54,6 @@ include $(PRODUCT_PATH)/qcom/sensors.mk
 include $(PRODUCT_PATH)/qcom/usb.mk
 include $(PRODUCT_PATH)/qcom/wifi.mk
 
-# Include Cyanogen product fragments
-include $(PRODUCT_PATH)/cyanogen/livedisplay.mk
 
 # Include device-specific product fragments
 include $(LOCAL_PATH)/product/*.mk
