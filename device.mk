@@ -21,6 +21,9 @@ PRODUCT_PATH := device/xiaomi/land/product
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Include device-specific product fragments
+include $(LOCAL_PATH)/land-product.mk
+
 # Include common product fragments
 include $(PRODUCT_PATH)/common/ant.mk
 include $(PRODUCT_PATH)/common/audio.mk
