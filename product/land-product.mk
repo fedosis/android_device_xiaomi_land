@@ -32,5 +32,5 @@ PRODUCT_PACKAGES += \
     init.qcom.sh
 
 # Generic.kl
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_OVERRIDES += \
     device/xiaomi/land/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
