@@ -20,36 +20,11 @@ BOARD_PATH := device/xiaomi/land/board
 # Land Device
 include $(DEVICE_PATH)/land.mk
 
-# Inherit common board fragments
-include $(BOARD_PATH)/common/bluetooth.mk
-include $(BOARD_PATH)/common/bootloader.mk
-include $(BOARD_PATH)/common/camera.mk
-include $(BOARD_PATH)/common/clang.mk
-include $(BOARD_PATH)/common/cpusets.mk
-include $(BOARD_PATH)/common/dexopt.mk
-include $(BOARD_PATH)/common/dlmalloc.mk
-include $(BOARD_PATH)/common/filesystem.mk
-include $(BOARD_PATH)/common/gps.mk
-include $(BOARD_PATH)/common/sepolicy.mk
+# Inherit common & cyanogen board fragments
+include $(BOARD_PATH)/common.mk
 
 # Inherit QCOM board fragments
-include $(BOARD_PATH)/qcom/bluetooth.mk
-include $(BOARD_PATH)/qcom/bootloader.mk
-include $(BOARD_PATH)/qcom/cne.mk
-include $(BOARD_PATH)/qcom/display.mk
-include $(BOARD_PATH)/qcom/encryption.mk
-include $(BOARD_PATH)/qcom/fm.mk
-include $(BOARD_PATH)/qcom/gps.mk
-include $(BOARD_PATH)/qcom/per-mgr.mk
-include $(BOARD_PATH)/qcom/platform.mk
-include $(BOARD_PATH)/qcom/power.mk
-include $(BOARD_PATH)/qcom/recovery.mk
-include $(BOARD_PATH)/qcom/ril.mk
-include $(BOARD_PATH)/qcom/sepolicy.mk
-include $(BOARD_PATH)/qcom/time.mk
-
-# Inherit Cyanogen board fragments
-include $(BOARD_PATH)/cyanogen/hardware.mk
+include $(BOARD_PATH)/qcom.mk
 
 # Inherit the proprietary files
 -include vendor/xiaomi/land/BoardConfigVendor.mk
