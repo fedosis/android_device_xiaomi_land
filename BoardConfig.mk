@@ -17,14 +17,8 @@
 DEVICE_PATH := device/xiaomi/land
 BOARD_PATH := device/xiaomi/land/board
 
-# Land Device
-include $(DEVICE_PATH)/land.mk
-
-# Inherit common & cyanogen board fragments
-include $(BOARD_PATH)/common.mk
-
-# Inherit QCOM board fragments
-include $(BOARD_PATH)/qcom.mk
+# Inherit board fragments
+include $(BOARD_PATH)/*.mk
 
 # Inherit the proprietary files
 -include vendor/xiaomi/land/BoardConfigVendor.mk
