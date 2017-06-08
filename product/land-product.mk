@@ -31,3 +31,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.sh
 
+# Generic.kl
+PRODUCT_COPY_FILES += \
+    device/xiaomi/land/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
