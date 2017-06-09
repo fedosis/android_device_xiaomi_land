@@ -1,2 +1,0 @@
-# Camera
-BOARD_QTI_CAMERA_32BIT_ONLY := true

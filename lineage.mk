@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
-#               2017 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Define platform before including any common things
-$(call inherit-product, $(LOCAL_PATH)/PlatformConfig.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -32,10 +28,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := lineage_land
-
-
-#LETS BUILD WITH ROOT
-#WITH_SU := true
+TARGET_BOARD_PLATFORM := msm8937
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

@@ -1,0 +1,45 @@
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_QCOM := true
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := $(TARGET_BOARD_PLATFORM)
+
+# CNE / DPM
+BOARD_USES_QCNE := true
+TARGET_LDPRELOAD := libNimsWrap.so
+
+# Display
+TARGET_USES_C2D_COMPOSITION := true
+TARGET_USES_ION := true
+USE_OPENGL_RENDERER := true
+
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
+# FM
+AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
+#TARGET_QCOM_NO_FM_FIRMWARE := true
+
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+
+# Peripheral manager
+TARGET_PER_MGR_ENABLED := true
+
+# QCOM support
+BOARD_USES_QCOM_HARDWARE := true
+
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+
+# RIL
+TARGET_RIL_VARIANT := caf
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
+# Time
+BOARD_USES_QC_TIME_SERVICES := true
