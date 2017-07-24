@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Include common product fragments
-include $(CM_PATH)/common/ant.mk
+include $(PRODUCT_PATH)/common/ant.mk
 include $(PRODUCT_PATH)/common/audio.mk
 include $(PRODUCT_PATH)/common/bluetooth.mk
 include $(PRODUCT_PATH)/common/bluetooth-le.mk
